@@ -1,12 +1,9 @@
 import { useCallback, useState } from "react";
 
 const SelectCategoryAndSubcategory02 = () => {
-  // const [categoryList, refetch, isLoading] = useCategoriesInfo();
   const [categoryName, setCategoryName] = useState("");
   const [subCategories, setSubCategories] = useState([""]);
-  //   const axiosPublic = useAxiosPublic();
   const [openModal, setOpenModal] = useState(false);
-  //   const location = useLocation();
   const handleCategoryNameChange = useCallback((e) => {
     setCategoryName(e.target.value);
   }, []);
@@ -33,26 +30,6 @@ const SelectCategoryAndSubcategory02 = () => {
         ),
       };
       console.log(categoryInfo);
-
-      //   // Uncomment the axios code to send the data to your backend
-      //   axiosPublic
-      //     .post("/categoryCollections", categoryInfo)
-      //     .then((res) => {
-      //       if (res.data.insertedId) {
-      //         refetch();
-      //         // setLoading(false);
-      //         Swal.fire({
-      //           title: "Good job!",
-      //           text: "Data added Successfully",
-      //           icon: "success",
-      //         });
-      //       }
-      //       // Clear the input fields after successful submission
-      //       setCategoryName("");
-      //       setSubCategories([""]);
-      //       console.log(res.data);
-      //     })
-      //     .catch((error) => console.error("Error posting category:", error));
     },
     [categoryName, subCategories]
   );
