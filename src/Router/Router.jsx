@@ -7,6 +7,7 @@ import RatingsAndProgressBar from '../Components/RatingsAndProgressBar/RatingsAn
 import AllCategories from '../Components/Categories/AllCategories/AllCategories';
 import AllImageHostTech from '../Components/ImageHostTech/AllImageHostTech/AllImageHostTech';
 import AllSelectAndOption from '../Components/SelectAndOption/AllSelectAndOption/AllSelectAndOption';
+import AllForms from '../Components/Form/AllForms/AllForms';
 const myCreatedRouter = createBrowserRouter([
      {
        path: "/",
@@ -39,6 +40,10 @@ const myCreatedRouter = createBrowserRouter([
           {
                path: "/imgHost",
                element:<AllImageHostTech />
+          },
+          {
+               path: "/form",
+               element:<AllForms />
           },
           // {
           //      path: "/ratings",

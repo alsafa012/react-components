@@ -1,0 +1,197 @@
+.fullContainer {
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin: auto;
+    background: #1e1e1e;
+    border-radius: 10%;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fullContainer h2,
+.li {
+    font-size: 50px;
+    color: whitesmoke;
+    z-index: 1;
+}
+
+.fullContainer::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 500px;
+    /* left: 0;
+    right: 0; */
+    /* transition: -50%,-50%; */
+    /* left: 75px; */
+    /* right: -100px; */
+    /* border: 1px solid green; */
+    background: linear-gradient(#00e5ff, #b400fb);
+    animation: animate 5s linear infinite;
+    /* border: 2px solid gray; */
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.fullContainer::after {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: gray;
+    border-radius: 10%;
+}
+
+.fullContainer .li {
+    color: blue;
+}
+
+
+
+
+
+/* body {
+    margin-top: 5%;
+    background-color: #8badec;
+    background-image: linear-gradient(90deg, #8badec 0%, #e2c195 90%);      
+} */
+/* background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+/* .body {
+    background-color: #8EC5FC;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+    width: 50%;
+    border: 5px solid green;
+    margin: auto;
+    border-radius: 10px;
+    margin: 50px auto;
+    background: transparent;
+    backdrop-filter:blur(20px);
+} */
+.wp {
+    background: url("https://i.ibb.co/vwZkcgh/blossom-floral-bouquet-decoration-colorful-beautiful-flowers-background-garden-flowers-plant-pattern.jpg") no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.body {
+    background-color: #8EC5FC;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+    width: 50%;
+    border: 1px solid gray;
+    margin: auto;
+    border-radius: 10px;
+    margin: 50px auto;
+    background: transparent;
+    /* This line is redundant since the next line overrides it */
+    backdrop-filter: blur(5px);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, .2); */
+    /* This line sets the backdrop filter */
+
+}
+
+.login-title {
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 2rem;
+    background-image: linear-gradient(to right, #48BB78, #0EA5E9);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.form-body {
+    margin-top: 10px;
+    width: 80%;
+    margin: auto;
+
+}
+
+.form-control {
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: rgba(51, 167, 212, 0.796);
+
+
+}
+
+.form-control:hover {
+    transform: scale(1.01);
+    outline: 1px solid skyblue;
+
+}
+
+.forgot-pass-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+
+/* Login btn */
+
+.login-btn-container {
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+.login-btn {
+    padding: 8px 10px;
+    width: 50%;
+    background-image: linear-gradient(to right, #68D391, #4299E1);
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 3s;
+    transition-delay: 0s;
+
+}
+
+.login-btn:hover {
+    background-image: linear-gradient(to right, #4299E1, #68D391);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}

@@ -22,6 +22,9 @@ const HomePage = () => {
                <Link to="/imgHost">
                     <button className="btn">ImageHost & ShowSlide</button>
                </Link>
+               <Link to="/form">
+                    <button className="btn">Form</button>
+               </Link>
                {/* <div className="my-10">
                     <Example></Example>
                </div> */}
