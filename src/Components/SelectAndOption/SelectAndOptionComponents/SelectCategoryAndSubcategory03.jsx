@@ -1,6 +1,6 @@
 import { useCallback, useState } from "react";
 import axios from "axios";
-const image_hosting_api = `https://api.imgbb.com/1/upload?key=${"Your_image_hosting_key without invitedcoma"}`;
+const image_hosting_api = `https://api.imgbb.com/1/upload?key=${"Your_image_hosting_key without invited-coma"}`;
 const SelectCategoryAndSubcategory03 = () => {
   const [showNames, setShowNames] = useState([]);
   const [subCategories, setSubCategories] = useState([
@@ -67,6 +67,16 @@ const SelectCategoryAndSubcategory03 = () => {
     updatedShowNames[index] = imageFile;
     setShowNames(updatedShowNames);
   };
+  const handleRemoveSubCategory = useCallback((index) => {
+    console.log(index);
+    // if(subCategories.length > 1)
+    setSubCategories((prevSubCategories) =>
+      prevSubCategories.filter((_, i) => i !== index)
+    );
+    setShowNames((prevShowNames) =>
+      prevShowNames.filter((_, i) => i !== index)
+    );
+  }, []);
 
   return (
     <div>
@@ -132,6 +142,14 @@ const SelectCategoryAndSubcategory03 = () => {
                     <span className="text-black font-medium">
                       Subcategory {index + 1}
                     </span>
+                    {subCategories.length > 1 && (
+                            <span
+                              onClick={() => handleRemoveSubCategory(index)}
+                              title="Remove"
+                            >
+                             x
+                            </span>
+                          )}
                   </label>
                   <div className="flex flex-col gap-3">
                     <input

@@ -1,24 +1,31 @@
 import { useState } from "react";
-
+import img1 from "../../../assets/photos/img1.jpg";
+import img2 from "../../../assets/photos/img2.jpg";
+import img3 from "../../../assets/photos/img3.jpg";
+import img4 from "../../../assets/photos/img4.jpg";
+import img5 from "../../../assets/photos/img5.jpg";
+import img6 from "../../../assets/photos/img6.jpeg";
+import img7 from "../../../assets/photos/img7.jpg";
 const Carousel3 = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
   const sliderImages = [
-    { img: "https://source.unsplash.com/600x600/?bedroom" },
-    { img: "https://source.unsplash.com/600x600/?room" },
-    { img: "https://source.unsplash.com/600x600/?livingrooms" },
-    { img: "https://source.unsplash.com/600x600/?livingroom" },
-    { img: "https://source.unsplash.com/600x600/?bedrooms" },
+    { img: img1 },
+    { img: img2 },
+    { img: img3 },
+    { img: img4 },
+    { img: img4 },
+    { img: img5 },
+    { img: img6 },
+    { img: img7 },
   ];
 
   const prevSlider = () =>
-    setCurrentSlider(
-      (currentSlider) =>
-        currentSlider === 0 ? sliderImages.length - 1 : currentSlider - 1
+    setCurrentSlider((currentSlider) =>
+      currentSlider === 0 ? sliderImages.length - 1 : currentSlider - 1
     );
   const nextSlider = () =>
-    setCurrentSlider(
-      (currentSlider) =>
-        currentSlider === sliderImages.length - 1 ? 0 : currentSlider + 1
+    setCurrentSlider((currentSlider) =>
+      currentSlider === sliderImages.length - 1 ? 0 : currentSlider + 1
     );
 
   return (

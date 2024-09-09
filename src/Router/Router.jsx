@@ -8,6 +8,10 @@ import AllCategories from '../Components/Categories/AllCategories/AllCategories'
 import AllImageHostTech from '../Components/ImageHostTech/AllImageHostTech/AllImageHostTech';
 import AllSelectAndOption from '../Components/SelectAndOption/AllSelectAndOption/AllSelectAndOption';
 import AllForms from '../Components/Form/AllForms/AllForms';
+import AllNavbar from '../Components/Navbar/AllNavbar';
+import Test from '../Components/Test/Test';
+import AllTsParticles from '../Components/TsParticles/AllTsParticles';
+import ReactLottie from '../Components/React-lottie/ReactLottie';
 const myCreatedRouter = createBrowserRouter([
      {
        path: "/",
@@ -45,6 +49,22 @@ const myCreatedRouter = createBrowserRouter([
                path: "/form",
                element:<AllForms />
           },
+          {
+               path: "/navbar",
+               element:<AllNavbar />
+          },
+          {
+               path: "/tsParticles",
+               element:<AllTsParticles />
+          },
+          {
+               path: "/test",
+               element:<Test />
+          },
+          {
+               path: "/lottie",
+               element:<ReactLottie />
+          },
           // {
           //      path: "/ratings",
           //      element:<AllCarousels></AllCarousels>
@@ -54,3 +74,12 @@ const myCreatedRouter = createBrowserRouter([
    ]);
 
 export default myCreatedRouter;
+// import { createBrowserRouter } from "react-router-dom";
+// import MainLayout from "../Layout/MainLayout";
+// const myCreatedRouter = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <MainLayout></MainLayout>,
+//   },
+// ]);
+// export default myCreatedRouter;

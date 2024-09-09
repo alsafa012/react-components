@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react";
-
+import img1 from "../../../assets/photos/img1.jpg";
+import img2 from "../../../assets/photos/img2.jpg";
+import img3 from "../../../assets/photos/img3.jpg";
+import img4 from "../../../assets/photos/img4.jpg";
+import img5 from "../../../assets/photos/img5.jpg";
+import img6 from "../../../assets/photos/img6.jpeg";
+import img7 from "../../../assets/photos/img7.jpg";
 const CarouselWithBackDrop = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
 
@@ -8,43 +14,43 @@ const CarouselWithBackDrop = () => {
       title: "100% export collections",
       description:
         "Welcome to 100 Export Collections, your one-stop destination for seamless international trade solutions! At our shop, we specialize in providing expert assistance for all your export needs. Whether you're a seasoned exporter or just starting out, we've got you covered with our comprehensive range of services.",
-      img: "https://source.unsplash.com/1200x1200/?nature/?1",
+      img: img1,
     },
     {
       title: "100% export collections",
       description:
         "Welcome to 100 Export Collections, your one-stop destination for seamless international trade solutions! At our shop, we specialize in providing expert assistance for all your export needs. Whether you're a seasoned exporter or just starting out, we've got you covered with our comprehensive range of services.",
-      img: "https://source.unsplash.com/1200x1200/?nature/?2",
+      img: img2,
     },
     {
       title: "100% export collections",
       description:
         "Welcome to 100 Export Collections, your one-stop destination for seamless international trade solutions! At our shop, we specialize in providing expert assistance for all your export needs. Whether you're a seasoned exporter or just starting out, we've got you covered with our comprehensive range of services.",
-      img: "https://source.unsplash.com/1200x1200/?nature/?3",
+      img: img3,
     },
     {
       title: "100% export collections",
       description:
         "Welcome to 100 Export Collections, your one-stop destination for seamless international trade solutions! At our shop, we specialize in providing expert assistance for all your export needs. Whether you're a seasoned exporter or just starting out, we've got you covered with our comprehensive range of services.",
-      img: "https://source.unsplash.com/1200x1200/?nature/?4",
+      img: img4,
     },
     {
       title: "100% export collections",
       description:
         "Welcome to 100 Export Collections, your one-stop destination for seamless international trade solutions! At our shop, we specialize in providing expert assistance for all your export needs. Whether you're a seasoned exporter or just starting out, we've got you covered with our comprehensive range of services.",
-      img: "https://source.unsplash.com/1200x1200/?nature/?2",
+      img: img5,
     },
     {
       title: "100% export collections",
       description:
         "Welcome to 100 Export Collections, your one-stop destination for seamless international trade solutions! At our shop, we specialize in providing expert assistance for all your export needs. Whether you're a seasoned exporter or just starting out, we've got you covered with our comprehensive range of services.",
-      img: "https://source.unsplash.com/1200x1200/?nature/?3",
+      img: img6,
     },
     {
       title: "100% export collections",
       description:
         "Welcome to 100 Export Collections, your one-stop destination for seamless international trade solutions! At our shop, we specialize in providing expert assistance for all your export needs. Whether you're a seasoned exporter or just starting out, we've got you covered with our comprehensive range of services.",
-      img: "https://source.unsplash.com/1200x1200/?nature/?4",
+      img: img7,
     },
   ];
 
@@ -135,7 +141,5 @@ const CarouselWithBackDrop = () => {
     </div>
   );
 };
-
-
 
 export default CarouselWithBackDrop;
