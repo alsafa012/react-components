@@ -8,6 +8,7 @@ import Carousel7 from "../CarouselsComponents/Carousel7";
 import CarouselWithBackDrop from "../CarouselsComponents/CarouselWithBackDrop";
 import { Carousel8 } from "../CarouselsComponents/Carousel8";
 import { Carousel9 } from "../CarouselsComponents/Carousel9";
+import CarouseWithScroll from "../CarouselsComponents/CarouseWithScroll";
 // import Carousel8 from "../CarouselsComponents/Carousel8";
 
 const AllCarousels = () => {
@@ -23,6 +24,7 @@ const AllCarousels = () => {
                <Carousel7></Carousel7>
                <Carousel9></Carousel9>
                <Carousel8></Carousel8>
+               <CarouseWithScroll />
                {/* <Carousel8></Carousel8> */}
           </div>
      );

@@ -175,18 +175,18 @@ const productCategoryTypes = [
 const Test = () => {
   const [loading, setLoading] = useState(false);
   const [selectedSize, setSelectedSize] = useState(categorySize[0].size);
-  // const [productData, setProductData] = useState([]);
+  const [productData, setProductData] = useState([]);
   // const [categoryName, setCategoryName] = useState(category[0].size);
   // console.log("selectedSize", selectedSize);
-  const { data: productData } = useQuery({
-    queryKey: ["allProducts"],
-    queryFn: async () => {
-      const res = await axios.get(
-        "https://jsonplaceholder.typicode.com/comments"
-      );
-      return res.data;
-    },
-  });
+  // const { data: productData } = useQuery({
+  //   queryKey: ["allProducts"],
+  //   queryFn: async () => {
+  //     const res = await axios.get(
+  //       "https://jsonplaceholder.typicode.com/comments"
+  //     );
+  //     return res.data;
+  //   },
+  // });
   // useEffect(() => {
   //   fetch("https://jsonplaceholder.typicode.com/comments")
   //     .then((res) => res.json())

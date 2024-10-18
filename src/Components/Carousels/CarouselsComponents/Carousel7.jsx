@@ -8,7 +8,7 @@ import img6 from "../../../assets/photos/img6.jpeg";
 import img7 from "../../../assets/photos/img7.jpg";
 const Carousel7 = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
-  console.log(currentSlider);
+  // console.log(currentSlider);
   const sliderImages = [img1, img2, img3, img4, img5, img6, img7];
 
   const isSmallScreen = window.innerWidth <= 768;
