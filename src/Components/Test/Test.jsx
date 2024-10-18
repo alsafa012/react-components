@@ -34,6 +34,7 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Pagination from "./Pagination";
 // import ReactLottie from "../React-lottie/ReactLottie";
 // import "./ProductList.css";
 
@@ -205,7 +206,8 @@ const Test = () => {
   };
   return (
     <div className="mb-5">
-      <div className="container mx-auto">
+      <Pagination />
+      <div className="container mx-auto hidden">
         {loading ? (
           <div className="text-center">
             {/* <ReactLottie /> */}
